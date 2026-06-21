@@ -514,79 +514,202 @@ a:hover { color: var(--primary-dark); }
   border-top: 1px solid var(--border);
 }
 
-/* ─── AI Roadmap ────────────────────────────────────────── */
-.roadmap-grid {
+/* ─── Experience Badge ──────────────────────────────────── */
+.experience-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), #7c3aed);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.4rem 1.1rem;
+  border-radius: 20px;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.03em;
+}
+
+/* ─── AI Roadmap (Phase-based) ──────────────────────────── */
+.roadmap-phases { margin-top: 2rem; display: flex; flex-direction: column; gap: 2.5rem; }
+
+.phase-block {
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 2px);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.phase-header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.phase-header.phase-1 { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-bottom: 1px solid #bfdbfe; }
+.phase-header.phase-2 { background: linear-gradient(135deg, #f5f3ff, #ede9fe); border-bottom: 1px solid #c4b5fd; }
+.phase-header.phase-3 { background: linear-gradient(135deg, #ecfdf5, #d1fae5); border-bottom: 1px solid #6ee7b7; }
+
+.phase-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+.phase-title { font-size: 1rem; font-weight: 700; color: var(--text); }
+
+.weekly-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0;
+  background: #fff;
+}
+
+.week-card {
+  padding: 1.5rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+
+.week-card:hover { background: #fafbff; }
+.week-card:last-child { border-right: none; }
+
+.week-num {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.week-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
+.week-card p  { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.75rem; line-height: 1.5; }
+
+.week-deliverables {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.75rem;
+}
+
+.week-deliverables li {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  padding: 0.2rem 0;
+}
+
+.week-deliverables li::before { content: "✓ "; color: #16a34a; font-weight: 700; }
+
+.week-tools { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
+
+/* ─── Target Roles ──────────────────────────────────────── */
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-.roadmap-card {
+.role-card {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.75rem;
   box-shadow: var(--shadow);
   transition: transform 0.2s;
-  position: relative;
 }
 
-.roadmap-card:hover { transform: translateY(-4px); }
+.role-card:hover { transform: translateY(-4px); }
 
-.roadmap-phase {
+.role-market {
   display: inline-block;
-  background: var(--primary);
-  color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.3rem;
-}
-
-.roadmap-period {
-  font-size: 0.8rem;
-  color: var(--text-muted);
   margin-bottom: 0.6rem;
 }
 
-.roadmap-card h3 {
+.role-market.uk  { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.role-market.uae { background: #fefce8; color: #92400e; border: 1px solid #fde68a; }
+
+.role-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+
+.role-salary {
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--primary);
   margin-bottom: 0.8rem;
-  color: var(--text);
 }
 
-.roadmap-items {
+.tax-free {
+  font-size: 0.72rem;
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-left: 0.4rem;
+}
+
+.role-reqs {
   list-style: none;
   padding: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
-.roadmap-items li {
+.role-reqs li {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.role-reqs li:last-child { border-bottom: none; }
+.role-reqs li::before { content: "→ "; color: var(--primary); font-weight: 700; }
+
+.role-employers {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ─── Skills for Roles ──────────────────────────────────── */
+.skills-for-roles {
+  margin-top: 2.5rem;
+  background: linear-gradient(135deg, #464feb12, #7c3aed0a);
+  border: 1px solid #464feb25;
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.skills-for-roles h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 1.5rem; }
+
+.skills-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-col h4 {
   font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skills-col ul { list-style: none; padding: 0; }
+
+.skills-col li {
+  font-size: 0.82rem;
   color: var(--text-muted);
   padding: 0.3rem 0;
   border-bottom: 1px solid var(--border);
 }
 
-.roadmap-items li:last-child { border-bottom: none; }
-.roadmap-items li::before { content: "→ "; color: var(--primary); font-weight: 700; }
+.skills-col li:last-child { border-bottom: none; }
+.skills-col li::before { content: "▸ "; color: var(--primary); }
 
-.roadmap-status {
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 0.3rem 0.7rem;
-  border-radius: 20px;
-  display: inline-block;
-}
-
-.roadmap-status.complete { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
-.roadmap-status.planned  { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
-
+/* ─── Roadmap (old reuse) ───────────────────────────────── */
 .roadmap-advantage {
   margin-top: 2.5rem;
   background: linear-gradient(135deg, #464feb15, #7c3aed10);
@@ -595,12 +718,7 @@ a:hover { color: var(--primary-dark); }
   padding: 2rem;
 }
 
-.roadmap-advantage h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-  color: var(--text);
-}
+.roadmap-advantage h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.2rem; color: var(--text); }
 
 .advantage-grid {
   display: grid;
