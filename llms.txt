@@ -3,17 +3,17 @@
 > Senior QA Lead with 15 years of Quality Engineering and Test Automation experience, transitioning into AI Quality Engineering (LLM output validation, hallucination detection, AI governance, Playwright + TypeScript).
 
 ## Profile
-- Website: https://sarathk06.github.io/
+- Website: https://sarathk06.github.io/sarathkoneti/
 - GitHub: https://github.com/sarathk06
 - LinkedIn: https://linkedin.com/in/sarathkoneti
 
 ## Pages
-- [Experience](https://sarathk06.github.io/experience.html)
-- [Skills](https://sarathk06.github.io/skills.html)
-- [Projects](https://sarathk06.github.io/projects.html)
-- [AI QA approach](https://sarathk06.github.io/ai-qa.html)
-- [What's brewing](https://sarathk06.github.io/brewing.html)
-- [Contact](https://sarathk06.github.io/contact.html)
+- [Experience](https://sarathk06.github.io/sarathkoneti/experience.html)
+- [Skills](https://sarathk06.github.io/sarathkoneti/skills.html)
+- [Projects](https://sarathk06.github.io/sarathkoneti/projects.html)
+- [AI QA approach](https://sarathk06.github.io/sarathkoneti/ai-qa.html)
+- [What's brewing](https://sarathk06.github.io/sarathkoneti/brewing.html)
+- [Contact](https://sarathk06.github.io/sarathkoneti/contact.html)
 
 ## Projects
 - [ai-quality-orchestration-demo](https://github.com/sarathk06/ai-quality-orchestration-demo): TODO
