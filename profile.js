@@ -2,19 +2,19 @@
 // Anything starting with TODO is a placeholder - replace it or delete the line.
 window.PROFILE = {
   name: 'Sarath Koneti',
-  role: 'QA Lead → AI Quality Engineer',
-  tagline: '15 years Quality Engineering · LLM Testing · Hallucination Detection · AI Governance · Playwright',
-  bio: 'Senior QA Lead with 15 years of Quality Engineering and Test Automation experience, now transitioning into AI Quality Engineering. ' +
-       'I apply battle-tested QA leadership - government-grade compliance, CI/CD ownership and cross-functional Agile delivery - to validating probabilistic AI systems.',
+  role: 'QA Lead · 15 years in Quality Engineering\nRisk-based testing · Business UAT support · AI-assisted automation',
+  tagline: '"Test what matters to the business, so every release goes out with confidence."',
+  bio: '15 years of helping teams release with confidence. I plan risk-based testing, support business users through UAT to sign-off, ' +
+       'and use AI models to speed up test design and automation - then review what they produce, because AI output needs testing too.',
 
   highlights: [
-    '15 years QA leadership & test automation',
-    'Government-grade compliance testing (DEFRA / MMO)',
-    'Playwright UI & API automation with TypeScript',
-    'LLM output validation & hallucination detection',
-    'Prompt robustness, adversarial & boundary testing',
-    'AI evaluation metrics & production monitoring',
-    'NIST AI RMF & ISO 42001 governance awareness'
+    'Risk-based test planning - effort goes where the business impact is highest',
+    'Business UAT support - scenarios, user walkthroughs, defect triage through to sign-off',
+    'Release confidence - clear test exit reports and go/no-go evidence for stakeholders',
+    'AI-assisted testing - using AI models to draft scenarios, test data and automation code, with human review',
+    'Testing AI features - checking LLM answers for accuracy, consistency and hallucinations',
+    'Playwright + TypeScript UI & API automation, BDD and CI/CD pipelines',
+    'Public-sector delivery (DEFRA / MMO) with compliance and accessibility in mind'
   ],
 
   personal: [
@@ -33,10 +33,13 @@ window.PROFILE = {
       period: 'TODO: 20XX–present', title: 'QA Lead', org: 'TODO: Company',
       project: 'DEFRA / MMO (UK Government)',
       points: [
-        'Led QA for government-grade, compliance-driven delivery',
-        'Owned CI/CD quality gates and test automation pipelines',
-        'Cross-functional Agile delivery with product, dev and business teams',
-        'TODO: Add measurable impact (e.g. tests automated, man-days saved, defects caught)'
+        'Own the test strategy and plan - scope, risks, entry/exit criteria agreed with product owners',
+        'Prioritise testing by business risk so critical journeys are covered first',
+        'Support business users through UAT - scenarios, walkthroughs, defect triage and sign-off',
+        'Provide go/no-go evidence for releases through test exit reports and defect status',
+        'Guide the team on Playwright automation and CI/CD quality gates',
+        'Use AI models to speed up test design and scripting, with review before anything is relied on',
+        'TODO: Add measurable impact (e.g. tests automated, man-days saved, defects caught pre-release)'
       ]
     },
     {
@@ -46,13 +49,13 @@ window.PROFILE = {
   ],
 
   skills: [
-    { group: 'LLM Output Validation', items: ['Hallucination detection', 'JSON schema validation', 'Confidence thresholds', 'Guardrails for probabilistic AI'] },
-    { group: 'Prompt Robustness Testing', items: ['Same-intent variation testing', 'Adversarial prompt injection', 'Boundary breakdown detection', 'Output consistency scoring'] },
-    { group: 'AI Evaluation Metrics', items: ['Consistency score', 'Hallucination rate', 'Task success %', 'A/B prompt testing', 'Evaluation dataset curation'] },
-    { group: 'Playwright & TypeScript', items: ['UI & API automation', 'Page Object Model', 'Fixtures', 'Component testing', 'Playwright BDD'] },
-    { group: 'CI/CD & Quality Engineering', items: ['GitHub Actions', 'Multi-layer quality gates', 'Allure / HTML reporting', 'Testcontainers integration tests'] },
-    { group: 'Other Frameworks', items: ['Robot Framework', 'MobileWright (Android)', 'Model Context Protocol (MCP)'] },
-    { group: 'AI Governance', items: ['NIST AI RMF', 'ISO 42001', 'Risk-based AI testing', 'Audit-ready validation'] }
+    { group: 'Test Leadership', items: ['Test strategy & planning', 'Risk-based prioritisation', 'Estimation & resourcing', 'Mentoring and code reviews', 'Stakeholder reporting'] },
+    { group: 'Business Assurance & UAT', items: ['UAT planning and scenario design', 'Supporting business users through testing', 'Defect triage with product owners', 'Sign-off and acceptance evidence'] },
+    { group: 'Release Confidence', items: ['Entry/exit criteria', 'Test exit & sign-off reports', 'Go/no-go recommendations', 'Regression & smoke packs'] },
+    { group: 'Test Automation', items: ['Playwright + TypeScript (UI & API)', 'BDD (Gherkin)', 'Page Object Model', 'Robot Framework', 'Mobile automation'] },
+    { group: 'AI-Assisted Testing', items: ['Drafting scenarios and test data with AI', 'AI-assisted automation scripting', 'Reviewing and correcting AI output', 'MCP / agent tooling'] },
+    { group: 'Testing AI Features', items: ['Accuracy and hallucination checks', 'Consistency across repeated prompts', 'Out-of-scope and misuse handling', 'Awareness of NIST AI RMF / ISO 42001'] },
+    { group: 'Delivery & Tooling', items: ['CI/CD quality gates (GitHub Actions, Azure DevOps)', 'Allure / HTML reporting', 'Testcontainers', 'Agile / Scrum'] }
   ],
 
   // Only real repos from https://github.com/sarathk06?tab=repositories
@@ -66,22 +69,25 @@ window.PROFILE = {
   ],
 
   aiqa: {
-    pipeline: ['Prompt versioned', 'LLM API called', 'Schema validated', 'Hallucination check', 'Metrics dashboard'],
-    layers: ['Code QA (deterministic)', 'AI output validation', 'Production monitoring'],
+    pipeline: ['Identify business risk', 'Plan & prioritise tests', 'AI-assisted design & automation', 'Human review', 'Execute & report', 'Go/no-go'],
+    layers: [
+      'Using AI to test faster - AI drafts scenarios, data and scripts; the team reviews before use',
+      'Testing AI features - checking answers are accurate, consistent and stay in scope',
+      'Release confidence - evidence-based sign-off, whether the feature is AI or not'
+    ],
     artifacts: [
-      { name: 'AI Evaluation Strategy', desc: 'Risk-based AI testing: hallucination rate targets, consistency thresholds, 3-layer quality framework.' },
-      { name: 'Prompt Test Dataset', desc: 'Prompt library with expected behaviours (not exact outputs) - edge, adversarial and boundary cases.' },
-      { name: 'AI Failure Reports', desc: 'Sample defect reports: hallucinations, prompt sensitivity, bias patterns, remediation.' },
-      { name: 'AI Governance Checklist', desc: 'NIST AI RMF / ISO 42001-aligned validation checklist for audit-ready AI QA.' },
-      { name: 'Test Strategy (Traditional)', desc: 'Scope, entry/exit criteria and quality metrics for deterministic systems.' },
-      { name: 'Accessibility Checklist', desc: 'WCAG 2.1 AA checklist with automated + manual validation steps.' }
+      { name: 'Risk-based test strategy', desc: 'Scope, risks, priorities and entry/exit criteria agreed with the business up front.' },
+      { name: 'UAT support pack', desc: 'Business-readable scenarios, walkthrough guidance and a simple defect triage process.' },
+      { name: 'Test exit / sign-off report', desc: 'What was tested, what was not, open defects and the risk of releasing - in plain language.' },
+      { name: 'AI output review checklist', desc: 'What to check before trusting AI-generated tests or AI feature answers: accuracy, scope, consistency.' },
+      { name: 'AI feature test scenarios', desc: 'Expected behaviours (not exact wording) for normal, edge, out-of-scope and misuse prompts.' },
+      { name: 'Accessibility checklist', desc: 'WCAG 2.1 AA checks combining automated scans with manual review.' }
     ]
   },
 
   brewing: [
-    { phase: 'Phase 1 - Foundation: prompt as a testable artefact', items: ['Prompt → API → validated output', 'Hallucination detection suite', 'Prompt versioning & regression', 'Output validation layer'] },
-    { phase: 'Phase 2 - Real AI QA techniques', items: ['Adversarial & prompt injection testing (OWASP LLM Top 10)', 'Boundary & out-of-scope testing', 'Multilingual consistency testing', 'AI document analyser QA'] },
-    { phase: 'Phase 3 - Production AI QA systems', items: ['Government chatbot QA framework', 'A/B prompt testing & evaluation dashboard', 'AI drift monitoring', 'AI QA portfolio showcase'] },
+    { phase: 'Now', items: ['Putting AI-assisted test design into day-to-day team practice', 'Building a repeatable checklist for reviewing AI-generated tests'] },
+    { phase: 'Next', items: ['Testing an LLM feature end to end - accuracy, consistency and out-of-scope handling', 'Adding AI feature checks to CI/CD as a release gate', 'Prompt injection and misuse testing (OWASP LLM Top 10)'] },
     { phase: 'This site', items: ['WebMCP support - AI agents can query this portfolio directly'] }
   ],
 

@@ -101,9 +101,9 @@
         pipe.appendChild(document.createTextNode(step));
       });
       return [
-        prompt('cat quality-layers.txt'), arrowList(A.layers.map(function (l, i) { return (i + 1) + '. ' + l; })),
-        prompt('cat pipeline.txt'), pipe,
-        prompt('ls artifacts/')
+        prompt('cat approach.txt'), arrowList(A.layers.map(function (l, i) { return (i + 1) + '. ' + l; })),
+        prompt('cat release-flow.txt'), pipe,
+        prompt('ls deliverables/')
       ].concat(A.artifacts.map(function (a) {
         return el('div', { cls: 'project' }, [el('span', { cls: 'project-name', text: a.name }), el('p', { text: a.desc })]);
       }));
@@ -119,7 +119,7 @@
     contact: function () {
       return [
         prompt('cat contact.txt'),
-        el('p', { cls: 'output', text: 'Open to senior QA / AI Quality Engineering roles. Let\'s connect.' }),
+        el('p', { cls: 'output', text: 'Open to QA Lead / Test Lead roles - including teams adopting AI in their testing or products. Happy to talk.' }),
         el('ul', { cls: 'arrow-list' }, P.contact.map(function (c) {
           var link = isTodo(c.url) ? el('span', { text: c.url }) : el('a', { href: c.url, text: c.url.replace(/^mailto:/, '') });
           return el('li', {}, [el('span', { text: c.label + ': ' }), link]);

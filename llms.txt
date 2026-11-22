@@ -1,6 +1,6 @@
 # Sarath Koneti
 
-> Senior QA Lead with 15 years of Quality Engineering and Test Automation experience, transitioning into AI Quality Engineering (LLM output validation, hallucination detection, AI governance, Playwright + TypeScript).
+> QA Lead with 15 years in Quality Engineering. Risk-based testing, business UAT support through to sign-off, release go/no-go reporting, and AI-assisted test automation (Playwright + TypeScript). Also tests AI/LLM features for accuracy and hallucinations.
 
 ## Profile
 - Website: https://sarathk06.github.io/sarathkoneti/
