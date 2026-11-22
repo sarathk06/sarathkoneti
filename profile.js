@@ -92,6 +92,6 @@ window.PROFILE = {
   contact: [
     { label: 'github', url: 'https://github.com/sarathk06' },
     { label: 'linkedin', url: 'https://linkedin.com/in/sarathkoneti' },
-    { label: 'email', url: 'TODO: mailto:you@example.com' }
+    { label: 'email', url: 'mailto:sarathk099@gmail.com' }
   ]
 };
